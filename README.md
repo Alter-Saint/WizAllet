@@ -1,0 +1,2 @@
+# WizAllet
+Simple fin-tracker
