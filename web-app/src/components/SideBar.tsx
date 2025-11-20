@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom"
 import { useAuth } from '../contexts/AuthContext'
 
 const SideBar = () => {
-  const { userId, username, isAuthenticated, logout } = useAuth()
+  const { username, isAuthenticated, logout } = useAuth()
   const navigate = useNavigate()
 
   const handleLogout = () => {
