@@ -3,7 +3,7 @@ import { transactionsAPI } from '../services/api'
 import type { Transaction, CreateTransactionRequest, UpdateTransactionRequest } from '../types'
 import { useAuth } from '../contexts/AuthContext'
 
-export const useTransactions = (userId: number) => {
+export const useTransactions = (userId: number, p0: { enabled: boolean }) => {
   const { getToken } = useAuth()
 
   return useQuery<Transaction[]>({

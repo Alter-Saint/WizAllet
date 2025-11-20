@@ -2,7 +2,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { userAPI } from '../services/api'
 import { useAuth } from '../contexts/AuthContext'
 
-export const useUser = (userId: number) => {
+export const useUser = (userId: number, p0: { enabled: boolean }) => {
   const { getToken } = useAuth()
   const token = getToken()
 

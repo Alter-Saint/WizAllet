@@ -20,15 +20,34 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [token, setToken] = useState<string | null>(() => localStorage.getItem('token'))
 
   useEffect(() => {
-    const handleStorageChange = (e: StorageEvent) => {
-      if (e.key === 'token' || e.key === 'userId' || e.key === 'username') {
-        setUserId(Number(localStorage.getItem('userId')) || null)
-        setUsername(localStorage.getItem('username'))
-        setToken(localStorage.getItem('token'))
-      }
+    const t = localStorage.getItem('token')
+    if (!t) {
+      setUserId(null)
+      setUsername(null)
+      return
     }
-    window.addEventListener('storage', handleStorageChange)
-    return () => window.removeEventListener('storage', handleStorageChange)
+
+    fetch('https://wizallet.onrender.com/api/auth/me', {
+      headers: {
+        Authorization: `Bearer ${t}`
+      }
+    })
+      .then(res => {
+        if (!res.ok) throw new Error()
+        return res.json()
+      })
+      .then(data => {
+        setUserId(data.id)
+        setUsername(data.username)
+      })
+      .catch(() => {
+        localStorage.removeItem('token')
+        localStorage.removeItem('userId')
+        localStorage.removeItem('username')
+        setToken(null)
+        setUserId(null)
+        setUsername(null)
+      })
   }, [])
 
   const login = (id: number, username: string, newToken: string) => {
