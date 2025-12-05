@@ -23,7 +23,7 @@ main {
 
 aside {
     width: 250px;
-    background: linear-gradient(180deg, #1a1625 0%, #2d1b3d 100%);
+    background: linear-gradient(180deg, #053b05 0%, #0a640e 100%);
     color: white;
     height: 100vh;
     position: fixed;
@@ -43,7 +43,7 @@ section {
 }
 
 span {
-    background: -webkit-linear-gradient(#eee, #a78bfa);
+    background: -webkit-linear-gradient(#eee, #10690d);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -56,7 +56,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2.5em;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #108a0e 0%, #ffc300 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -104,7 +104,7 @@ th, td {
 }
 
 th {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #108a0e 0%, #ffc300 100%);
     color: white;
     font-weight: 600;
 }
@@ -136,13 +136,13 @@ a:hover {
 
 a.active {
     background: rgba(255, 255, 255, 0.15);
-    border-left: 3px solid #a78bfa;
+    border-left: 3px solid #ffc300;
 }
 
 button {
     margin-top: 10px;
     padding: 10px 15px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #108a0e 0%, #ffc300 100%);
     border-radius: 8px;
     margin: 10px;
     color: white;
@@ -150,26 +150,25 @@ button {
     border: none;
     font-weight: 500;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 15px rgba(16, 138, 14, 0.4);
 }
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 6px 20px rgba(16, 138, 14, 0.6);
 }
 
 button:active {
     transform: translateY(0);
 }
 
-/* Login/Register Container Styles */
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #108a0e 0%, #ffc300 100%);
 }
 
 .login-box {
@@ -258,9 +257,9 @@ button:active {
 
 .form-group input:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #108a0e;
     background: white;
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 0 0 4px rgba(16, 138, 14, 0.1);
 }
 
 .form-group input::placeholder {
@@ -315,14 +314,14 @@ button:active {
 }
 
 .save-btn, .login-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #108a0e 0%, #ffc300 100%);
     color: white;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 15px rgba(16, 138, 14, 0.4);
 }
 
 .save-btn:hover:not(:disabled), .login-btn:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 6px 20px rgba(16, 138, 14, 0.6);
 }
 
 .save-btn:active, .login-btn:active {
@@ -407,8 +406,8 @@ button:active {
 
 .modal-content input:focus, .modal-content select:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    border-color: #108a0e;
+    box-shadow: 0 0 0 4px rgba(16, 138, 14, 0.1);
 }
 
 .modal-content label {
@@ -425,13 +424,13 @@ button:active {
         position: relative;
         padding: 15px;
     }
-    
+
     main {
         margin-left: 0;
         width: 100%;
         padding: 15px;
     }
-    
+
     nav {
         flex-direction: row;
         flex-wrap: wrap;
@@ -439,59 +438,59 @@ button:active {
         margin: 20px 0;
         gap: 10px;
     }
-    
+
     section {
         max-height: none;
         width: 100%;
     }
-    
+
     .dashboard-content {
         flex-direction: column;
         max-width: 100%;
     }
-    
+
     h1 {
         font-size: 2em;
     }
-    
+
     h2 {
         font-size: 1.75em;
     }
-    
+
     h3 {
         font-size: 1.25em;
     }
-    
+
     .form-section {
         padding: 1rem;
     }
-    
+
     .form-actions {
         flex-direction: column;
     }
-    
+
     .save-btn, .cancel-btn, .load-data-btn {
         width: 100%;
     }
-    
+
     button {
         width: 100%;
         margin: 5px 0;
     }
-    
+
     .modal-content {
         padding: 1.5rem;
         max-width: 90%;
     }
-    
+
     table {
         font-size: 0.9rem;
     }
-    
+
     th, td {
         padding: 8px;
     }
-    
+
     .login-box {
         padding: 2rem;
     }
@@ -501,48 +500,48 @@ button:active {
     body {
         font-size: 14px;
     }
-    
+
     h1 {
         font-size: 1.75em;
     }
-    
+
     h2 {
         font-size: 1.5em;
     }
-    
+
     h3 {
         font-size: 1.15em;
     }
-    
+
     .form-section {
         padding: 0.75rem;
     }
-    
+
     .modal-content {
         padding: 1rem;
     }
-    
+
     button, .save-btn, .cancel-btn, .load-data-btn, .login-btn {
         padding: 0.75rem 1rem;
         font-size: 0.95rem;
     }
-    
+
     table {
         font-size: 0.8rem;
     }
-    
+
     th, td {
         padding: 6px;
     }
-    
+
     .login-box {
         padding: 1.5rem;
     }
-    
+
     .login-box h1 {
         font-size: 2rem;
     }
-    
+
     .login-box h2 {
         font-size: 1.25rem;
     }
