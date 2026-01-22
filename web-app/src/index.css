@@ -23,7 +23,7 @@ main {
 
 aside {
     width: 250px;
-    background: linear-gradient(180deg, #053b05 0%, #0a640e 100%);
+    background: linear-gradient(180deg, #000000 0%, #640a61 100%);
     color: white;
     height: 100vh;
     position: fixed;
@@ -56,7 +56,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2.5em;
-    background: linear-gradient(135deg, #787816 0%, #0c752f 100%);
+    background: linear-gradient(135deg, #661678 0%, #700c75 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -104,7 +104,7 @@ th, td {
 }
 
 th {
-    color: rgb(8, 176, 123);
+    color: rgb(28, 8, 176);
     font-weight: 600;
 }
 
@@ -135,13 +135,13 @@ a:hover {
 
 a.active {
     background: rgba(255, 255, 255, 0.15);
-    border-left: 3px solid #ffc300;
+    border-left: 3px solid #0080ff;
 }
 
 button {
     margin-top: 10px;
     padding: 10px 15px;
-    background: linear-gradient(135deg, #108a0e 0%, #ffc300 100%);
+    background: linear-gradient(135deg, #140e8a 0%, #30053c 100%);
     border-radius: 8px;
     margin: 10px;
     color: white;
@@ -149,12 +149,12 @@ button {
     border: none;
     font-weight: 500;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(16, 138, 14, 0.4);
+    box-shadow: 0 4px 15px rgba(28, 14, 138, 0.4);
 }
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(16, 138, 14, 0.6);
+    box-shadow: 0 6px 20px rgba(45, 14, 138, 0.6);
 }
 
 button:active {
@@ -167,7 +167,7 @@ button:active {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    background: linear-gradient(135deg, #108a0e 0%, #ffc300 100%);
+    background: linear-gradient(135deg, #270e8a 0%, #d900ff 100%);
 }
 
 .login-box {
@@ -256,7 +256,7 @@ button:active {
 
 .form-group input:focus {
     outline: none;
-    border-color: #108a0e;
+    border-color: #0e588a;
     background: white;
     box-shadow: 0 0 0 4px rgba(16, 138, 14, 0.1);
 }
@@ -290,7 +290,7 @@ button:active {
     background: #d1fae5;
     border: 1px solid #a7f3d0;
     border-radius: 8px;
-    color: #065f46;
+    color: #060a5f;
     margin-bottom: 1rem;
 }
 
@@ -313,14 +313,14 @@ button:active {
 }
 
 .save-btn, .login-btn {
-    background: linear-gradient(135deg, #108a0e 0%, #ffc300 100%);
+    background: linear-gradient(135deg, #0e338a 0%, #006eff 100%);
     color: white;
-    box-shadow: 0 4px 15px rgba(16, 138, 14, 0.4);
+    box-shadow: 0 4px 15px rgba(105, 14, 138, 0.4);
 }
 
 .save-btn:hover:not(:disabled), .login-btn:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(16, 138, 14, 0.6);
+    box-shadow: 0 6px 20px rgba(14, 76, 138, 0.6);
 }
 
 .save-btn:active, .login-btn:active {
@@ -346,15 +346,15 @@ button:active {
 }
 
 .load-data-btn {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #1026b9 0%, #052296 100%);
     color: white;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 4px 15px rgba(16, 69, 185, 0.4);
 }
 
 .load-data-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+    box-shadow: 0 6px 20px rgba(16, 64, 185, 0.6);
 }
 
 .modal {
@@ -405,7 +405,7 @@ button:active {
 
 .modal-content input:focus, .modal-content select:focus {
     outline: none;
-    border-color: #108a0e;
+    border-color: #0e218a;
     box-shadow: 0 0 0 4px rgba(16, 138, 14, 0.1);
 }
 
